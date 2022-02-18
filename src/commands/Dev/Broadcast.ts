@@ -46,7 +46,7 @@ export default class Command extends BaseCommand {
 			.map((jids) => (jids.includes("g.us") ? jids : null))
 			.filter((v) => v);
 		for (let i = 0; i < chats.length; i++) {
-			const text = `*⚡「YOTSUBA BROADCAST」⚡*\n\n${term}\n\n Regards ~ *${M.sender.username}*`;
+			const text = `*🌹「THANDO BROADCAST」🌹*\n\n${term}\n\n Regards ~ *${M.sender.username}*`;
 			this.client.sendMessage(chats[i], { url: selected }, MessageType.video, {
 				mimetype: Mimetype.gif,
 				caption: `${text}`,
